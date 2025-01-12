@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Language Translator</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="./dist/output.css" rel="stylesheet">
+        <link rel="stylesheet" href="./asset/style.css">
+    </head>
+    <body class="text-gray-800 bg-gray-100">
+        <div class="container px-5 py-10 mx-auto">
+            <div class="max-w-4xl p-8 mx-auto bg-white rounded-lg shadow-lg">
+                <h1
+                    class="mb-6 text-3xl font-bold text-center text-blue-600">Language
+                    Translator</h1>
+                <div class="mb-4">
+                    <label for="source-language"
+                        class="block mb-2 font-medium text-gray-700">Source
+                        Language:</label>
+                    <select id="source-language"
+                        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="en">English</option>
+                        <option value="ur">Urdu</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="target-language"
+                        class="block mb-2 font-medium text-gray-700">Target
+                        Language:</label>
+                    <select id="target-language"
+                        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="ur">Urdu</option>
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="es">Spanish</option>
+                        <option value="it">Italian</option>
+                        <option value="ja">Japanese</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="input-text"
+                        class="block mb-2 font-medium text-gray-700">Enter
+                        Text:</label>
+                    <textarea id="input-text" rows="4"
+                        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="Type your text here..."></textarea>
+                </div>
+                <div class="mb-6">
+                    <button id="translate-button"
+                        class="w-full py-3 font-medium text-white transition bg-blue-600 rounded-lg hover:bg-blue-700">Translate</button>
+                </div>
+                <div id="output-container" class="hidden">
+                    <h2 class="mb-2 text-lg font-bold text-gray-700">Translated
+                        Text:</h2>
+                    <div id="translated-text"
+                        class="p-3 bg-gray-100 border rounded-lg"></div>
+                </div>
+            </div>
+        </div>
+        <script src="./asset/script.js"></script>
+    </body>
+</html>
