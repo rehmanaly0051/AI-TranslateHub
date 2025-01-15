@@ -2,14 +2,17 @@
 
 ### Project Screenshots
 
-![Directory Structure](image-2.png)
-*Directpry Structure Example*
+### Project Screenshots
 
-![Translation Interface](image.png)
+![Directory Structure](assets/image-2.png)  
+*Directory Structure Example*
+
+![Translation Interface](assets/image.png)  
 *Main Translation Interface*
 
-![Django Admin Interface](image-1.png)
+![Django Admin Interface](assets/image-1.png)  
 *Django Admin Interface*
+
 
 ## Setup Instructions
 
