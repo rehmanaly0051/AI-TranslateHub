@@ -2,14 +2,20 @@
 
 ### Project Screenshots
 
+### Project Screenshots
+
 ![Directory Structure](assets/image-2.png)  
 *Directory Structure Example*
 
-![Translation Interface](assets/image.png)  
+![Translation Interface](assets/image.png)
+(assets/image-3.png)  
+(assets/image-4.png)
+(assets/image-5.png)
 *Main Translation Interface*
 
-![DjangoRestFramework Interface](assets/image-1.png)  
-*DjangoRestFramework Interface*
+![Django Reast Framework Interface](assets/image-1.png)  
+(assets/image-6.png)
+*Django Rest Framework Interface*
 
 
 ## Setup Instructions
