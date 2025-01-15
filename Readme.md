@@ -6,13 +6,13 @@
 *Directory Structure Example*
 
 ![Translation Interface](assets/image.png)
-(assets/image-3.png)  
-(assets/image-4.png)
-(assets/image-5.png)
+![Translation Interface](assets/image-3.png)  
+![Translation Interface](assets/image-4.png)
+![Translation Interface](assets/image-5.png)
 *Main Translation Interface*
 
 ![Django Reast Framework Interface](assets/image-1.png)  
-(assets/image-6.png)
+![Django Reast Framework Interface](assets/image-6.png)
 *Django Rest Framework Interface*
 
 
