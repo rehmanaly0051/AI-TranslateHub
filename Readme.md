@@ -10,8 +10,8 @@
 ![Translation Interface](assets/image.png)  
 *Main Translation Interface*
 
-![Django Admin Interface](assets/image-1.png)  
-*Django Admin Interface*
+![DjangoRestFramework Interface](assets/image-1.png)  
+*DjangoRestFramework Interface*
 
 
 ## Setup Instructions
