@@ -1,62 +1,110 @@
-# Language Translator Web Application
-Built with HTML, CSS, Tailwind CSS, Django REST Framework, and JavaScript
+# Django-React Translator Application
 
-## Project Setup Instructions
+### Project Screenshots
 
-### Frontend Setup
+![Directory Structure](image-2.png)
+*Directpry Structure Example*
 
-1. **Navigate to Frontend Directory**
-    ```bash
-    cd translator/frontend
-    ```
+![Translation Interface](image.png)
+*Main Translation Interface*
 
-2. **Install Dependencies**
-    ```bash
-    npm install
-    ```
+![Django Admin Interface](image-1.png)
+*Django Admin Interface*
 
-3. **Compile Tailwind CSS**
-    ```bash
-    npx tailwindcss -i ./asset/style.css -o ./dist/output.css --watch
-    ```
+## Setup Instructions
 
-4. **Start Development Server**
-    - Install Live Server extension in VS Code
-    - Right-click `index.html` and select "Open with Live Server"
-    - Frontend will be available at `http://127.0.0.1:5500`
+### Backend Setup (Django)
 
-### Backend Setup
+1. Create a virtual environment:
+```bash
+python -m venv env
+```
 
-1. **Navigate to Project Root**
-    ```bash
-    cd translator
-    ```
+2. Activate the virtual environment:
+- Windows:
+```bash
+.\env\Scripts\activate
+```
+- Linux/Mac:
+```bash
+source env/bin/activate
+```
 
-2. **Create Virtual Environment**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # For Linux/Mac
-    venv\Scripts\activate     # For Windows
-    ```
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-3. **Install Python Dependencies**
-    ```bash
-    pip install -r requirements.txt
-    ```
+4. Navigate to translator directory:
+```bash
+cd translator
+```
 
-4. **Run Migrations**
-    ```bash
-    python manage.py migrate
-    ```
+5. Run Django server:
+```bash
+Also apply Migrations on that in worst case
+if its not running 
+python manage.py makemigrations
+python manage.py migrate
 
-5. **Start Django Server**
-    ```bash
-    python manage.py runserver
-    ```
-    Backend will be available at `http://127.0.0.1:8000`
+Then run the server
+python manage.py runserver
+```
+Server will run on `http://localhost:8000`
 
-## Development Notes
-- Ensure both frontend and backend servers are running simultaneously
-- Frontend communicates with backend via REST API endpoints
-- Real-time translation updates using JavaScript fetch API
-- Responsive UI powered by Tailwind CSS
+### Frontend Setup (React)
+
+1. Open a new terminal and navigate to frontend directory:
+```bash
+cd translator/frontend
+```
+
+2. Install npm dependencies:
+```bash
+npm install
+```
+
+3. Start development server:
+```bash
+npm run dev
+```
+Frontend will run on `http://localhost:3000`
+
+## Project Structure
+```
+Make a folder ```translator_project``` and then 
+go to that directory and create env. and activate it 
+and after activating it just create translator project 
+using django .....
+
+translator_project/
+├── env/                 # Python virtual environment (separate)
+├── translator/          # Django project folder
+│   ├── manage.py
+│   ├── translator/      # Django project configuration
+│   │   ├── __init__.py
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   └── api/            # Django app folder
+│       ├── __init__.py
+│       ├── admin.py
+│       ├── apps.py
+│       ├── models.py
+│       ├── serializers.py
+│       ├── urls.py
+│       └── views.py
+├── frontend/           # React/Next.js frontend
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── next.config.js
+└── requirements.txt    # Python dependencies
+
+```
+
+## Important Notes
+- Keep both backend and frontend servers running simultaneously
+- Backend API and Frontend must be running on different ports
+- Make sure all dependencies are installed before running the servers
