@@ -2,8 +2,6 @@
 
 ### Project Screenshots
 
-### Project Screenshots
-
 ![Directory Structure](assets/image-2.png)  
 *Directory Structure Example*
 
