@@ -55,7 +55,7 @@ python manage.py migrate
 Then run the server
 python manage.py runserver
 ```
-Server will run on `http://localhost:8000`
+Server will run on `http://127.0.0.1:8000`
 
 ### Frontend Setup (React)
 
